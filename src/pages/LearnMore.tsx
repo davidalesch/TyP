@@ -8,8 +8,8 @@ function LearnMore() {
     <div className="App">
       <Header />
       <WhatSection />
+      <WhySection /> 
       <HowSection />
-      <WhySection /> {/* Adding the Why section here */}
       <Footer />
     </div>
   );
@@ -42,7 +42,117 @@ const WhatSection = () => {
   );
 };
 
-// "How" Section (Video Placeholder for Blockchain Explanation)
+const HowSection = () => {
+    return (
+      <section className="how-section white-bg">
+        <h2 className="section-title">How We Do It</h2>
+  
+        {/* Introduction */}
+        <motion.div
+          className="how-row left-aligned"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <div className="text-box">
+            <p>We use blockchain technology to ensure transparency, security, and trust throughout the supply chain. But what exactly is blockchain, and how does it work?</p>
+          </div>
+          <div className="image-box">
+            <div className="image-placeholder">[Animation / Image]</div>
+          </div>
+        </motion.div>
+  
+        {/* Understanding Blockchain */}
+        <motion.div
+          className="how-row right-aligned"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <div className="image-box">
+            <div className="image-placeholder">[Animation / Image]</div>
+          </div>
+          <div className="text-box">
+            <h3>Understanding Blockchain</h3>
+            <p>At its core, blockchain is a digital ledger that records transactions securely, transparently, and tamper-proof. Unlike traditional databases controlled by a single entity, blockchain is decentralized. Instead, transactions are verified by a network of computers, making it incredibly difficult to alter or manipulate the data.</p>
+          </div>
+        </motion.div>
+  
+        {/* Decentralization */}
+        <motion.div
+          className="how-row left-aligned"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <div className="text-box">
+            <h3>Decentralization</h3>
+            <p>Instead of relying on a central authority, blockchain operates on a peer-to-peer network where all participants have access to the same information.</p>
+          </div>
+          <div className="image-box">
+            <div className="image-placeholder">[Animation / Image]</div>
+          </div>
+        </motion.div>
+  
+        {/* Immutability */}
+        <motion.div
+          className="how-row right-aligned"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <div className="image-box">
+            <div className="image-placeholder">[Animation / Image]</div>
+          </div>
+          <div className="text-box">
+            <h3>Immutability</h3>
+            <p>Once a transaction is recorded on the blockchain, it cannot be changed or deleted, ensuring data integrity.</p>
+          </div>
+        </motion.div>
+  
+        {/* Transparency */}
+        <motion.div
+          className="how-row left-aligned"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <div className="text-box">
+            <h3>Transparency</h3>
+            <p>Every transaction is stored in a publicly accessible ledger, making it easy to track and verify information.</p>
+          </div>
+          <div className="image-box">
+            <div className="image-placeholder">[Animation / Image]</div>
+          </div>
+        </motion.div>
+  
+        {/* Security */}
+        <motion.div
+          className="how-row right-aligned"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <div className="image-box">
+            <div className="image-placeholder">[Animation / Image]</div>
+          </div>
+          <div className="text-box">
+            <h3>Security</h3>
+            <p>Transactions are encrypted and verified using advanced cryptographic techniques, protecting data from fraud or unauthorized changes.</p>
+          </div>
+        </motion.div>
+      </section>
+    );
+  };
+  
+
+/*// "How" Section (Video Placeholder for Blockchain Explanation)
 const HowSection = () => {
   return (
     <motion.section
@@ -60,20 +170,20 @@ const HowSection = () => {
         </p>
       </div>
       <div className="section-video">
-        {/* Placeholder for "How" Video - blockchain explanation */}
+        {/* Placeholder for "How" Video - blockchain explanation *//*}
         <div className="video-placeholder">
           <p>Video placeholder for blockchain technology explanation (later add your blockchain video here)</p>
         </div>
       </div>
     </motion.section>
   );
-};
+}; */
 
 // "Why" Section (Text explaining why we do it)
 const WhySection = () => {
   return (
     <motion.section
-      className="why-section white-bg section-flex"
+      className="why-section dark-bg section-flex"
       initial={{ opacity: 0, x: -50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}

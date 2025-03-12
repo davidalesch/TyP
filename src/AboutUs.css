@@ -1,4 +1,7 @@
 /* General page styles */
+
+
+
 .App {
     font-family: 'Arial', sans-serif;
   }
@@ -10,6 +13,7 @@
   }
   
   .vision-intro h2 {
+    font-style: 'Dancing Script', cursive !important;
     font-size: 32px;
     margin-bottom: 20px;
   }

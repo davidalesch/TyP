@@ -25,7 +25,6 @@ const VisionSection = () => {
         transition={{ duration: 1 }}
       >
         <div className="vision-intro">
-          <h2>Our Vision</h2>
           <p className="vision-text">
             A shared vision for ethical sourcing and conscious consumer choices. 
             We believe in leveraging technology to create a more transparent, responsible, and sustainable future.
@@ -40,7 +39,7 @@ const ContactSection = () => {
   return (
     <motion.section
       className="contact-section white-bg"
-      initial={{ opacity: 0, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >

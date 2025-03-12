@@ -4,6 +4,67 @@
     padding-top: 80px; /* Adjust this based on your header height */
 }
 
+/* How Section */
+.how-section {
+    padding: 60px 30px;
+    background-color: #003B5C;
+    color: black;
+    text-align: left;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  
+  /* Alternating Row Layout */
+  .how-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  
+  /* Left & Right Alignment */
+  .left-aligned {
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  .right-aligned {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  
+  /* Text & Image Box */
+  .text-box {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .image-box {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Placeholder Styling */
+  .image-placeholder {
+    width: 300px;
+    height: 200px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  
 .white-bg {
     background-color: #fff;
   }
