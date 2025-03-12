@@ -21,12 +21,11 @@ function WelcomePage() {
   );
 }
 
-// Header with logo and navigation options
 const Header = () => {
   return (
     <header className="header">
       <div className="logo-container">
-        <h1 className="logo">TYP</h1>
+      <img src="favicon.ico" alt="TYP Logo" className="logo" style={{ height: '50px', width: 'auto' }} />
       </div>
       <nav className="nav">
         <a href="#about" className="nav-link">About Us</a>
