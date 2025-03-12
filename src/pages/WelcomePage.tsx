@@ -5,6 +5,9 @@ import SupplyChainAnimation from '../Animations/SupplyChainAnimation';
 import BlockchainAnimation from '../Animations/BlockChainAnimation';
 import AdvantageAnimation from '../Animations/AdvantageAnimation';
 import ImplementationAnimation from '../Animations/ImplementationAnimation';
+import LightBulb from '../Animations/LightBulb';
+import QRcode from '../Animations/QRcode';
+import Header from '../components/ui/header';
 
 function WelcomePage() {
   return (
@@ -21,18 +24,7 @@ function WelcomePage() {
   );
 }
 
-const Header = () => {
-  return (
-    <header className="header">
-      <div className="logo-container">
-      <img src="favicon.ico" alt="TYP Logo" className="logo" style={{ height: '50px', width: 'auto' }} />
-      </div>
-      <nav className="nav">
-        <a href="#about" className="nav-link">About Us</a>
-      </nav>
-    </header>
-  );
-};
+
 
 
 // Hero section with animated text and pop letters for T, Y, P
@@ -112,7 +104,7 @@ const WhatWeDo = () => {
         </p>
       </div>
       <div className="section-image">
-        <SupplyChainAnimation />
+        <QRcode />
       </div>
     </motion.section>
   );
@@ -138,7 +130,7 @@ const WhyInnovative = () => {
           </ul>
         </div>
         <div className="section-image">
-          <BlockchainAnimation />
+          <LightBulb />
         </div>
       </div>
     </motion.section>

@@ -126,7 +126,7 @@ section {
 }
 
 .demo-btn {
-  background-color: #215832c4;
+  background-color: #FFA500;
   color: #fff;
   border: none;
 }
@@ -134,7 +134,7 @@ section {
 .contact-btn {
   background-color: #fff;
   color: #000;
-  border: 2px solid #006400;
+  border: 2px solid #FFA500;
 }
 
 /* Section Flex Layout for side-by-side sections */

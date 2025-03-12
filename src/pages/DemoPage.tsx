@@ -1,30 +1,26 @@
 import React from 'react';
 import '../DemoPage.css';
+import Header from '../components/ui/header'; 
 
 const DemoPage: React.FC = () => {
   return (
     <div className="demo-page">
-      <header className="header">
-        <div className="logo-container">
-            <h1 className="logo">TYP</h1>
-        </div>
-        <nav className="nav">
-            <a href="#about" className="nav-link">About Us</a>
-        </nav>
-      </header>
+      <Header />  {/* Use the Header component here */}
+      
       <div className="product-header">
         <div className="product-info">
-          <img src="/sweater.jpg" alt="Sweater" className="product-image" />
+          <img src="/greenHoodie.jpg" alt="Sweater" className="product-image" />
           <div className="product-details">
-            <h1 className="product-name">Patagonia Hoddie Blue</h1>
+            <h1 className="product-name">Hoodie Green</h1>
             <p className="serial-number">Serial Number: SW-12345678</p>
           </div>
         </div>
       </div>
+
       <div className="supply-chain-timeline">
         <h2>Supply Chain Journey</h2>
         <div className="timeline">
-          {/* Step 1: Point of Sale */}
+          {/* Timeline Steps */}
           <div className="timeline-item">
             <div className="timeline-marker"></div>
             <div className="timeline-content">
@@ -33,7 +29,6 @@ const DemoPage: React.FC = () => {
               <p className="location">New York, USA</p>
             </div>
           </div>
-          {/* Step 2: Production Location */}
           <div className="timeline-item">
             <div className="timeline-marker"></div>
             <div className="timeline-content">
@@ -42,7 +37,6 @@ const DemoPage: React.FC = () => {
               <p className="location">Bangladesh</p>
             </div>
           </div>
-          {/* Step 3: Dyeing */}
           <div className="timeline-item">
             <div className="timeline-marker"></div>
             <div className="timeline-content">
@@ -51,7 +45,6 @@ const DemoPage: React.FC = () => {
               <p className="location">Dhaka, Bangladesh</p>
             </div>
           </div>
-          {/* Step 4: Garment Assembly */}
           <div className="timeline-item">
             <div className="timeline-marker"></div>
             <div className="timeline-content">
@@ -60,7 +53,6 @@ const DemoPage: React.FC = () => {
               <p className="location">Dhaka, Bangladesh</p>
             </div>
           </div>
-          {/* Step 5: Material Provenance */}
           <div className="timeline-item">
             <div className="timeline-marker"></div>
             <div className="timeline-content">

@@ -1,0 +1,179 @@
+/* General page styles */
+.App {
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Vision Section */
+.vision-section {
+    padding: 60px 30px;
+    text-align: center;
+  }
+  
+  .vision-intro h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .vision-text {
+    font-size: 20px;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white; /* Adjust to fit your theme */
+  }
+  
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 50px 20px;
+    color: #333;
+  }
+  
+  .contact-section h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-top: 40px; /* Ensures title is not hidden by the header */
+  }
+  
+  /* Contact Info Container */
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .contact-info {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .contact-info .contact-item {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .contact-info p {
+    font-size: 1.1em;
+  }
+  
+  .contact-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Message Form */
+  .message-form {
+    flex: 1;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .message-form h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  .message-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message-form form div {
+    margin-bottom: 15px;
+  }
+  
+  .message-form form label {
+    font-size: 1.2em;
+  }
+  
+  .message-form form input,
+  .message-form form textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .message-form form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .message-form form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Founders Section */
+  .founders-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .founders-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1000px; /* Adjust based on layout */
+    margin: 0 auto; /* Ensures centering */
+  }
+  
+  .founder {
+    width: 250px;
+    text-align: center;
+  }
+  
+  .founder-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .founder-name {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .founder-role {
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFA500; /* Adjust color for contrast */
+    margin-top: -5px; /* Reduce space between name and role */
+  }  
+  
+  .founder-bio {
+    font-size: 0.9em;
+    color: white;
+  }
+  
+  /* Centered Founder */
+  .founder.center {
+    order: 0; /* Ensures it stays in the middle on all screen sizes */
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
