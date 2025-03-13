@@ -198,7 +198,7 @@ const HowSection = () => {
 const Footer = () => {
     return (
       <footer className="footer white-bg" id="contact">
-        <p>&copy; {new Date().getFullYear()} Trace Your Products. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Trace Your Product. All rights reserved.</p>
       </footer>
     );
   };

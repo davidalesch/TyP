@@ -50,39 +50,40 @@ const ContactSection = () => {
         <div className="contact-info">
           <div className="contact-item">
             <h3>Our Office</h3>
-            <p>123 Business Ave, Suite 456, City, Country</p>
+            <p>Bidborough House, 38-50 Bidborough Street, London, WC1H 9BT, UK</p>
           </div>
 
           <div className="contact-item">
             <h3>Sales Inquiries</h3>
-            <p>Phone: +1 (123) 456-7890</p>
+            <p>Phone: +44 (0)20 7679 2000</p>
           </div>
 
           <div className="contact-item">
             <h3>Reach Out to Us</h3>
-            <p>Email: <a href="mailto:contact@yourcompany.com">contact@yourcompany.com</a></p>
+            <p>Email: <a href="mailto:sales@typ.com">sales@typ.com</a></p>
           </div>
         </div>
 
         {/* Send Us a Message (Right side) */}
         <div className="message-form">
-          <h3>Send Us a Message</h3>
-          <form action="mailto:contact@yourcompany.com" method="POST" encType="text/plain">
+        <h3>Send Us a Message</h3>
+        <form action="mailto:contact@yourcompany.com" method="POST" encType="text/plain">
             <div>
-              <label htmlFor="name">Name:</label>
-              <input type="text" id="name" name="name" required />
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" name="name" required />
             </div>
             <div>
-              <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" required />
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="email" required />
             </div>
             <div>
-              <label htmlFor="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
             </div>
             <button type="submit">Send Message</button>
-          </form>
+        </form>
         </div>
+
       </div>
     </motion.section>
   );
@@ -97,7 +98,7 @@ const FoundersSection = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <h2>Meet the Founders</h2>
+      <h2 className="founders-title">Meet the Founders</h2>
       <div className="founders-container">
         {/* Founder 1 */}
         <div className="founder">
@@ -107,9 +108,9 @@ const FoundersSection = () => {
             className="founder-image"
           />
           <p className="founder-name">Vera Eusébio</p>
-            <p className="founder-role">Digital Marketing & Fashion</p> {/* Subtitle/Role */}
-            <p className="founder-bio">
-          With experience at Chanel and a background in Management and Digital Innovation, Vera bridges fashion industry insights with cutting-edge technology and marketing strategies.
+          <p className="founder-role">Digital Marketing & Fashion</p>
+          <p className="founder-bio">
+            With experience at Chanel and a background in Management and Digital Innovation, Vera bridges fashion industry insights with cutting-edge technology and marketing strategies.
           </p>
         </div>
 
@@ -121,9 +122,9 @@ const FoundersSection = () => {
             className="founder-image"
           />
           <p className="founder-name">David Alesch</p>
-            <p className="founder-role">Blockchain & Optimization</p> {/* Subtitle/Role */}
-            <p className="founder-bio">
-          David specializes in blockchain technology with a focus on sustainability. His research on energy-efficient ledger systems drives our commitment to eco-friendly innovation.
+          <p className="founder-role">Blockchain & Optimization</p>
+          <p className="founder-bio">
+            David specializes in blockchain technology with a focus on sustainability. His research on energy-efficient ledger systems drives our commitment to eco-friendly innovation.
           </p>
         </div>
 
@@ -135,9 +136,9 @@ const FoundersSection = () => {
             className="founder-image"
           />
           <p className="founder-name">Paula Dröghoff</p>
-            <p className="founder-role">Data & Enterprise Strategy</p> {/* Subtitle/Role */}
-            <p className="founder-bio">
-          Paula’s expertise in technology consulting and data-driven decision-making ensures our solutions align with business needs, driving innovation and adoption.
+          <p className="founder-role">Data & Enterprise Strategy</p>
+          <p className="founder-bio">
+            Paula’s expertise in technology consulting and data-driven decision-making ensures our solutions align with business needs, driving innovation and adoption.
           </p>
         </div>
       </div>
@@ -145,11 +146,12 @@ const FoundersSection = () => {
   );
 };
 
+
 // Footer with copyright information
 const Footer = () => {
   return (
     <footer className="footer white-bg" id="contact">
-      <p>&copy; {new Date().getFullYear()} Trace Your Products. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} Trace Your Product. All rights reserved.</p>
     </footer>
   );
 };

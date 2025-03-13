@@ -1,8 +1,53 @@
-import React from 'react';
-import '../DemoPage.css';
-import Header from '../components/ui/header'; 
+import React, { useState } from "react";
+import { motion } from "framer-motion"; // Animation
+import "../DemoPage.css";
+import Header from "../components/ui/header";
+import QRcode from "../Animations/QRcode";
 
-const DemoPage: React.FC = () => {
+function DemoPage() {
+  const [showDemo, setShowDemo] = useState(false);
+
+  return (
+    <div className="App">
+      <Header />
+      {!showDemo ? <ScanPopup onClose={() => setShowDemo(true)} /> : <Demo />}
+      <Footer />
+    </div>
+  );
+}
+
+// **Popup Component**
+const ScanPopup: React.FC<{ onClose: () => void }> = ({ onClose }) => {
+  return (
+    <motion.div
+      className="popup-overlay"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.div
+        className="popup-content"
+        initial={{ scale: 0.8 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
+        {/* Placeholder for animation */}
+        <div className="section-image">
+        <QRcode />
+        </div>
+
+        <h2>Scan to View Product Journey</h2>
+        <p>Click the button below to unlock the details of this product.</p>
+
+        <button className="scan-button" onClick={onClose}>
+          Scan Me
+        </button>
+      </motion.div>
+    </motion.div>
+  );
+};
+
+const Demo: React.FC = () => {
   return (
     <div className="demo-page">
       <Header />  
@@ -23,7 +68,7 @@ const DemoPage: React.FC = () => {
 
           {/* Timeline Steps */}
           <div className="timeline-item">
-            <img src="hoppingImage.jpeg" alt="Point of Sale" className="timeline-image"/>
+            <img src="Scanning.JPG" alt="Point of Sale" className="timeline-image"/>
             <div className="timeline-marker"></div>
             <div className="timeline-content">
               <h3>Point of Sale</h3>
@@ -39,11 +84,11 @@ const DemoPage: React.FC = () => {
               <p className="location">Bangladesh</p>
             </div>
             <div className="timeline-marker"></div>
-            <img src="/production.png" alt="Production" className="timeline-image"/>
+            <img src="Sewing.JPG" alt="Production" className="timeline-image"/>
           </div>
 
           <div className="timeline-item">
-            <img src="/dyeing.png" alt="Dyeing Process" className="timeline-image"/>
+            <img src="Dyeing.JPG" alt="Dyeing Process" className="timeline-image"/>
             <div className="timeline-marker"></div>
             <div className="timeline-content">
               <h3>Dyeing</h3>
@@ -59,22 +104,31 @@ const DemoPage: React.FC = () => {
               <p className="location">Dhaka, Bangladesh</p>
             </div>
             <div className="timeline-marker"></div>
-            <img src="/assembly.png" alt="Garment Assembly" className="timeline-image"/>
+            <img src="Garment.JPG" alt="Garment Assembly" className="timeline-image"/>
           </div>
 
           <div className="timeline-item">
-            <img src="/material.png" alt="Material Provenance" className="timeline-image"/>
+            <img src="Cotton.JPG" alt="Material Provenance" className="timeline-image"/>
             <div className="timeline-marker"></div>
             <div className="timeline-content">
               <h3>Material Provenance</h3>
               <p className="timestamp">2025-02-20 09:00</p>
-              <p className="location">China</p>
+              <p className="location">Xinjiang, China</p>
             </div>
           </div>
 
         </div>
       </div>
     </div>
+  );
+}
+
+// Footer
+const Footer = () => {
+  return (
+    <footer className="footer white-bg" id="contact">
+      <p>&copy; {new Date().getFullYear()} Trace Your Product. All rights reserved.</p>
+    </footer>
   );
 };
 

@@ -1,183 +1,243 @@
 /* General page styles */
-
-
-
 .App {
-    font-family: 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Vision Section */
+.vision-section {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.vision-intro h2 {
+  font-style: 'Dancing Script', cursive !important;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.vision-text {
+  font-size: 20px;
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white; /* Adjust to fit your theme */
+}
+
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 20px;
+  color: #333;
+}
+
+.contact-section h2 {
+  margin-top: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding-top: 40px; /* Ensures title is not hidden by the header */
+}
+
+/* Contact Info Container */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+.message-form,
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 30px;
+}
+
+.contact-info .contact-item {
+  margin-bottom: 20px;
+}
+
+.contact-info h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.contact-info p {
+  font-size: 1.1em;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Message Form Styling */
+.message-form {
+  flex: 1;
+  background-color: #003B5C; /* White background */
+  color: #fff; /* Black text */
+  padding: 15px;
+  border: 1px solid #ccc; /* Border without rounded corners */
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.message-form h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  color: #fff; /* Ensuring the title is black */
+}
+
+.message-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-form form div {
+  margin-top: 1px;
+  margin-bottom: 2px;
+}
+
+.message-form form label {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+  width: 100%; /* Ensures labels are aligned */
+  color: white;
+}
+
+.message-form form input,
+.message-form form textarea {
+  padding: 4px;
+  font-size: 1em;
+  border: 1px solid black;
+  width: 100%;
+  color: black;
+  box-sizing: border-box; /* Ensures input fields fit within their container */
+  margin-top: 5px; /* Adds space between label and input */
+}
+
+.message-form form textarea {
+  min-height: 80px;
+}
+
+.message-form form button {
+  padding: 4px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  width: auto;
+  align-self: flex-start; /* Ensures the button aligns with the fields */
+}
+
+.message-form form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design: Ensures the form looks good on all screen sizes */
+@media (max-width: 768px) {
+  .message-form {
+    padding: 15px 10px;
   }
 
-  /* Vision Section */
-.vision-section {
-    padding: 60px 30px;
-    text-align: center;
-  }
-  
-  .vision-intro h2 {
-    font-style: 'Dancing Script', cursive !important;
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .vision-text {
-    font-size: 20px;
-    font-style: italic;
-    max-width: 800px;
-    margin: 0 auto;
-    color: white; /* Adjust to fit your theme */
-  }
-  
-  
-  /* Contact Section */
-  .contact-section {
-    padding: 50px 20px;
-    color: #333;
-  }
-  
-  .contact-section h2 {
-    margin-top: 0;
-    font-size: 2.5em;
-    font-weight: bold;
-    padding-top: 40px; /* Ensures title is not hidden by the header */
-  }
-  
-  /* Contact Info Container */
-  .contact-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin-top: 30px;
-  }
-  
-  .contact-info {
-    flex: 1;
-    padding-right: 30px;
-  }
-  
-  .contact-info .contact-item {
-    margin-bottom: 20px;
-  }
-  
-  .contact-info h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-  .contact-info p {
-    font-size: 1.1em;
-  }
-  
-  .contact-info a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .contact-info a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Message Form */
-  .message-form {
-    flex: 1;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
   .message-form h3 {
-    font-size: 1.8em;
-    font-weight: bold;
+    font-size: 1.4em;
   }
-  
-  .message-form form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .message-form form div {
-    margin-bottom: 15px;
-  }
-  
+
   .message-form form label {
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
-  
+
   .message-form form input,
   .message-form form textarea {
-    padding: 10px;
-    font-size: 1.1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .message-form form button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .message-form form button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Founders Section */
-  .founders-section {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .founders-container {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 40px;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 1000px; /* Adjust based on layout */
-    margin: 0 auto; /* Ensures centering */
-  }
-  
-  .founder {
-    width: 250px;
-    text-align: center;
-  }
-  
-  .founder-image {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-  }
-  
-  .founder-name {
-    font-weight: bold;
-    margin-top: 10px;
+    font-size: 0.9em;
   }
 
-  .founder-role {
-    font-style: italic;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #FFA500; /* Adjust color for contrast */
-    margin-top: -5px; /* Reduce space between name and role */
-  }  
-  
-  .founder-bio {
+  .message-form form button {
+    padding: 8px 18px;
     font-size: 0.9em;
-    color: white;
   }
-  
-  /* Centered Founder */
-  .founder.center {
-    order: 0; /* Ensures it stays in the middle on all screen sizes */
+}
+
+
+.founders-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.founders-title {
+  font-size: 2rem; /* Adjust size as needed */
+  margin-bottom: 30px; /* Space between title and the founders */
+}
+
+.founders-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between founder cards */
+  flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+}
+
+.founder {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all content (image, name, role, bio) */
+  max-width: 300px;
+  text-align: center;
+  margin-bottom: 30px; /* Space between founders vertically */
+}
+
+.founder-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Makes the image round */
+  max-width: 150px; /* Limit the size of the image */
+  margin-bottom: 20px;
+}
+
+.founder-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.founder-role {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #FFA500;
+  margin-bottom: 10px;
+}
+
+.founder-bio {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Center the Founder Section on small screens */
+@media (max-width: 768px) {
+  .founders-container {
+    flex-direction: column; /* Stack founders vertically on smaller screens */
+    align-items: center;
   }
-  
-  /* Footer */
-  .footer {
-    padding: 20px 0;
-    text-align: center;
-    background-color: #f8f8f8;
-    color: #333;
-  }
-  
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #f8f8f8;
+  color: #333;
+}

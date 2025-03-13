@@ -99,8 +99,7 @@ const WhatWeDo = () => {
       <div className="section-text">
         <h2>What We Do</h2>
         <p>
-          We leverage blockchain technology to build a transparent and secure supply chain management solution.
-          Track the entire journey of your product and verify its authenticity through a unique QR code system.
+        We provide a transparent, secure, and efficient solution to help businesses track and verify their supply chains. By integrating cutting-edge technology, we ensure that every product's journey is fully visible to consumers, from production to delivery. Our unique system allows our customers to not only track their supply chain securely and traceably, but to easily verify the authenticity of a product, providing visibility and trust in every product by offering customers more sourcing insights.
         </p>
       </div>
       <div className="section-image">
@@ -124,9 +123,9 @@ const WhyInnovative = () => {
         <div className="section-text">
           <h2>Why It's Innovative</h2>
           <ul>
-        <li>Blockchain ensures unmatched transparency and security.</li>
-        <li>Real-time tracking with QR code verification for consumers.</li>
-        <li>Seamless integration with existing business systems.</li>
+            <li>Unmatched Transparency: Our system provides real-time tracking, ensuring that consumers can see the entire journey of a product from source to store.</li>
+            <li>Ease of Use: Through QR code verification, consumers can instantly check the authenticity and origin of products with just a scan.</li>
+            <li>Seamless Integration: Our solution integrates easily into existing business systems, minimizing disruptions while maximizing efficiency.</li>
           </ul>
         </div>
         <div className="section-image">
@@ -150,8 +149,7 @@ const OurAdvantage = () => {
       <div className="section-text">
         <h2>Our Advantage</h2>
         <p>
-          Unlike traditional solutions, we use a single lightweight ledger that handles proofs of inclusion for every step in your product's supply chain.
-          This innovative approach makes our solution more scalable, sustainable, and efficient.
+        Unlike traditional solutions that rely on multiple complex systems, we use a single, lightweight ledger to track and verify every step in your product’s supply chain. This streamlined approach makes our solution more scalable, sustainable, and efficient, enabling businesses to reduce costs and enhance consumer trust.      
         </p>
       </div>
       <div className="section-image">
@@ -220,7 +218,7 @@ const DemoContact = () => {
 const Footer = () => {
   return (
     <footer className="footer white-bg" id="contact">
-      <p>&copy; {new Date().getFullYear()} Trace Your Products. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} Trace Your Product. All rights reserved.</p>
     </footer>
   );
 };
