@@ -1,189 +1,204 @@
 /* Container for the demo page */
 .demo-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Product Header */
-  .product-header {
-    margin-top: 80px; /* Leaves room for the fixed header */
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Product Header */
+.product-header {
+  margin-top: 80px; /* Leaves room for the fixed header */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-image {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-details {
+  text-align: left;
+}
+
+.product-name {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.serial-number {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Supply Chain Timeline */
+.supply-chain-timeline {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.supply-chain-timeline h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 600px;
+}
+
+/* Vertical line in the timeline */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #264238;
+  transform: translateX(-50%);
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Marker: a circle on the timeline */
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 4px solid #264238;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Timeline content */
+.timeline-content {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 45%;
+}
+
+/* Timeline images */
+.timeline-image {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Positioning for timeline content and images */
+
+/* Odd items: text on the right, image on the left */
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-left: calc(50% + 20px);
+  text-align: left;
+}
+
+.timeline-item:nth-child(odd) .timeline-image {
+  position: absolute;
+  left: calc(50% - 130px); /* Image positioned on the left */
+}
+
+/* Even items: text on the left, image on the right */
+.timeline-item:nth-child(even) .timeline-content {
+  margin-right: calc(50% + 20px);
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-image {
+  position: absolute;
+  right: calc(50% - 130px); /* Image positioned on the right */
+}
+
+/* Typography for timeline content */
+.timeline-content h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.timeline-content p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 768px) {
   .product-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .product-image {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .product-details {
-    text-align: left;
-  }
-  
-  .product-name {
-    font-size: 2.5rem;
-    margin: 0;
-  }
-  
-  .serial-number {
-    font-size: 1.2rem;
-    color: #666;
-  }
-  
-  /* Supply Chain Timeline */
-  .supply-chain-timeline {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .supply-chain-timeline h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Timeline container */
-  .timeline {
-    position: relative;
-    margin: 0 auto;
-    padding: 20px 0;
-    max-width: 600px;
-  }
-  
-  /* Vertical line in the timeline */
-  .timeline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 4px;
-    background: #264238;
-    transform: translateX(-50%);
-  }
-  
-  /* Timeline item */
-  .timeline-item {
-    position: relative;
-    margin: 40px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Marker: a circle on the timeline */
-  .timeline-marker {
-    position: absolute;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border: 4px solid #264238;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-  }
-  
-  /* Timeline content: fixed width, alternating positions */
-  .timeline-content {
-    background: #fff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 45%;
-  }
-  
-  /* Odd items (right side): keep content right of central line */
-  .timeline-item:nth-child(odd) .timeline-content {
-    margin-left: calc(50% + 20px);
-    text-align: left;
-  }
-  
-  /* Even items (left side): keep content left of central line */
-  .timeline-item:nth-child(even) .timeline-content {
-    margin-right: calc(50% + 20px);
-    text-align: right;
-  }
-  
-  /* Typography for timeline content */
-  .timeline-content h3 {
-    margin-top: 0;
-    font-size: 1.5rem;
-  }
-  
-  .timeline-content p {
-    margin: 5px 0;
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  /* Responsive adjustments for mobile */
-  @media screen and (max-width: 768px) {
-    .product-info {
       flex-direction: column;
-    }
-    
-    .product-name {
-      font-size: 2rem;
-    }
-    
-    .serial-number {
-      font-size: 1rem;
-    }
-    
-    .timeline {
-      max-width: 90%;
-    }
-    
-    /* Keep the vertical line in the center on mobile */
-    .timeline::before {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    
-    .timeline-item {
-      margin: 20px 0;
-    }
-    
-    /* Keep the marker centered */
-    .timeline-marker {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    
-    /* Reduce the width of timeline content for mobile */
-    .timeline-content {
-      width: 40%;
-      padding: 8px 16px;
-    }
-    
-    /* Maintain alternating positioning with smaller margins */
-    .timeline-item:nth-child(odd) .timeline-content {
-      margin-left: calc(50% + 10px);
-      text-align: left;
-    }
-    
-    .timeline-item:nth-child(even) .timeline-content {
-      margin-right: calc(50% + 10px);
-      text-align: right;
-    }
-    
-    /* Adjust font sizes for better fit on mobile */
-    .timeline-content h3 {
-      font-size: 1.2rem;
-    }
-    
-    .timeline-content p {
-      font-size: 0.8rem;
-    }
   }
-  
+
+  .product-name {
+      font-size: 2rem;
+  }
+
+  .serial-number {
+      font-size: 1rem;
+  }
+
+  .timeline {
+      max-width: 90%;
+  }
+
+  /* Keep the vertical line in the center on mobile */
+  .timeline::before {
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .timeline-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0;
+  }
+
+  /* Keep the marker centered */
+  .timeline-marker {
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  /* Reduce the width of timeline content for mobile */
+  .timeline-content {
+      width: 80%;
+      padding: 8px 16px;
+      text-align: center;
+      margin: 0 auto;
+  }
+
+  .timeline-image {
+      position: static;
+      margin: 10px auto;
+      width: 80px; /* Reduce size for mobile */
+  }
+
+  /* Remove side positioning for mobile */
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+      margin: 0 auto;
+  }
+}
