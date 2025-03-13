@@ -76,7 +76,7 @@ const HowSection = () => {
           </div>
           <div className="text-box">
             <h3>Understanding Blockchain</h3>
-            <p>At its core, blockchain is a digital ledger that records transactions securely, transparently, and tamper-proof. Unlike traditional databases controlled by a single entity, blockchain is decentralized. Instead, transactions are verified by a network of computers, making it incredibly difficult to alter or manipulate the data.</p>
+            <p>Blockchain is like a shared digital logbook that securely records every step a product takes in the fashion supply chain. Once information is added, it can't be changed, ensuring accuracy and trust between suppliers, brands, and consumers.</p>
           </div>
         </motion.div>
   
@@ -90,7 +90,8 @@ const HowSection = () => {
         >
           <div className="text-box">
             <h3>Decentralization</h3>
-            <p>Instead of relying on a central authority, blockchain operates on a peer-to-peer network where all participants have access to the same information.</p>
+            <p>Instead of one company controlling all the records, blockchain works like a network of digital checkpoints. Every supplier, manufacturer, and retailer involved has access to the same verified information, preventing misinformation or hidden practices.</p>
+            <p style={{ fontStyle: "italic" }}>Example: A clothing brand sources organic cotton for a new clothing line. Each stage—harvesting, dyeing, weaving, and manufacturing—is recorded on the blockchain, proving its authenticity and ethical sourcing.</p>
           </div>
           <div className="image-box">
             <div className="image-placeholder">[Animation / Image]</div>
@@ -110,7 +111,8 @@ const HowSection = () => {
           </div>
           <div className="text-box">
             <h3>Immutability</h3>
-            <p>Once a transaction is recorded on the blockchain, it cannot be changed or deleted, ensuring data integrity.</p>
+            <p>Once a transaction is recorded on the blockchain, it cannot be changed or deleted. This ensures that key details—such as where materials were sourced, who manufactured them, and when they were shipped—are permanently stored and verifiable.</p>
+            <p style={{ fontStyle: "italic" }}>Example: A high-end handbag brand claims its leather is sourced sustainably. With blockchain, every step in the production process is logged, making it impossible to falsely label products as "sustainable" without proof.</p>
           </div>
         </motion.div>
   
@@ -124,7 +126,8 @@ const HowSection = () => {
         >
           <div className="text-box">
             <h3>Transparency</h3>
-            <p>Every transaction is stored in a publicly accessible ledger, making it easy to track and verify information.</p>
+            <p>Every transaction is stored in a digital ledger that all authorized participants can access. This allows brands and consumers to track a product’s journey in real time.</p>
+            <p style={{ fontStyle: "italic" }}> Example: A customer scans a QR code on a dress tag and sees its full journey—from raw materials to factory production to store shelves—ensuring it was ethically made.</p>
           </div>
           <div className="image-box">
             <div className="image-placeholder">[Animation / Image]</div>
@@ -144,7 +147,8 @@ const HowSection = () => {
           </div>
           <div className="text-box">
             <h3>Security</h3>
-            <p>Transactions are encrypted and verified using advanced cryptographic techniques, protecting data from fraud or unauthorized changes.</p>
+            <p>Blockchain uses advanced encryption to protect data, ensuring that supply chain information remains tamper-proof. This reduces the risk of counterfeiting, unethical labor practices, and false product claims.</p>
+            <p style={{ fontStyle: "italic" }}>Example: A sneaker company combats counterfeiting by assigning each authentic pair a unique blockchain-verified ID. Customers can check this ID to confirm they’re buying a genuine product.</p>
           </div>
         </motion.div>
       </section>

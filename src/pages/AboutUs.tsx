@@ -24,6 +24,7 @@ const VisionSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
+        <h2>Our Vision</h2>
         <div className="vision-intro">
           <p className="vision-text">
             A shared vision for ethical sourcing and conscious consumer choices. 
