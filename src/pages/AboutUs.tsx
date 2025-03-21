@@ -103,7 +103,7 @@ const FoundersSection = () => {
         {/* Founder 1 */}
         <div className="founder">
           <img
-            src="profile.jpg" // Replace with your image paths
+            src="Vera.JPG" // Replace with your image paths
             alt="Vera Eusébio"
             className="founder-image"
           />
@@ -117,7 +117,7 @@ const FoundersSection = () => {
         {/* Founder 2 (Center) */}
         <div className="founder center">
           <img
-            src="profile.jpg" // Replace with your image paths
+            src="David.JPG" // Replace with your image paths
             alt="David Alesch"
             className="founder-image"
           />
@@ -131,7 +131,7 @@ const FoundersSection = () => {
         {/* Founder 3 */}
         <div className="founder">
           <img
-            src="profile.jpg" // Replace with your image paths
+            src="Paula.JPG" // Replace with your image paths
             alt="Paula Dröghoff"
             className="founder-image"
           />
